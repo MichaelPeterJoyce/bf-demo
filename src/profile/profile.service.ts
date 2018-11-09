@@ -31,6 +31,19 @@ class ProfileService {
             }, 3000);
         });
     };
-};
+
+    public setUserEmail = (username: any) => {
+        return this.$q((resolve: any, reject: any) => {
+            this.$timeout(() => {
+                if (Math.round(Math.random())) {
+                    this.profileUser.user_email = username + "@blueface.com";
+                    resolve(this.profileUser);
+                } else {
+                    reject({ error: 'on email generation!' });
+                }
+            }, 3000);
+        });
+    }
+}
 
 export default ProfileService;
