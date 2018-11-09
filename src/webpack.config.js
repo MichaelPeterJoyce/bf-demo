@@ -23,13 +23,12 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
+        filename: '[name].bundle.js',
     },
     devtool: 'source-map',
     devServer: {
         contentBase: './',
         port: 8090,
-        publicPath: '/',
         watchContentBase: true,
     }
 };

@@ -5,13 +5,11 @@ import '@uirouter/angularjs';
 import './style.css';
 
 // Import your app functionality
-import './home';
 import './profile/profile.module';
 
 // Create and bootstrap application
 const requires = [
     'ui.router',
-    'home',
     'profile'
 ];
 
