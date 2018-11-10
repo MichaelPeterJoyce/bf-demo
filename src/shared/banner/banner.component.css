@@ -1,0 +1,11 @@
+.bf-footer {
+    background: #00B6F1;
+    padding: 10px 10px 10px 10px;
+}
+.bf-footer-powered-by img {
+    max-width: 80px;
+}
+
+.bf-footer, .bf-footer-links ul li a {
+    color: #FFF;
+}

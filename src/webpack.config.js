@@ -15,6 +15,14 @@ module.exports = {
                 test: /\.css?$/,
                 loader: ['style-loader', 'css-loader'],
             },
+            {
+                test: /\.html?$/,
+                loader: ['html-loader'],
+            },
+            {
+                test: /\.png?$/,
+                loader: ['file-loader'],
+            },
         ]
     },
     resolve: {

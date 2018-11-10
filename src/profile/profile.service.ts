@@ -24,7 +24,7 @@ class ProfileService {
             this.$timeout(() => {
                 if (Math.round(Math.random())) {
                     this.profileUser.username = username;
-                    resolve(this.profileUser);
+                    resolve(this.setUserEmail(this.profileUser.username));
                 } else {
                     reject({ error: 'Invalid username' });
                 }
@@ -32,7 +32,7 @@ class ProfileService {
         });
     };
 
-    public setUserEmail = (username: any) => {
+    private setUserEmail = (username: any) => {
         return this.$q((resolve: any, reject: any) => {
             this.$timeout(() => {
                 if (Math.round(Math.random())) {

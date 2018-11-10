@@ -1,16 +1,16 @@
 import angular from 'angular';
 import '@uirouter/angularjs';
-
-// Import your app stylesheets
 import './style.css';
-
-// Import your app functionality
+import './shared/shared.module';
 import './profile/profile.module';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Create and bootstrap application
 const requires = [
     'ui.router',
-    'profile'
+    'profile',
+    'shared'
 ];
 
 (<any>window).app = angular.module('app', requires);
