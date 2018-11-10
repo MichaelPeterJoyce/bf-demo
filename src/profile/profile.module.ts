@@ -3,13 +3,13 @@ import ProfileService from './profile.service';
 import { ProfileSettingsComponent } from './profile-settings.component';
 import ProfileConfig from './profile.config';
 
-// Create the module where our functionality can attach to
+// Create the Profile Module
 let profileModule = angular.module('profile', []);
-//Configs
+// attach Configs
 profileModule.config(ProfileConfig);
-// Services
+// attach Services
 profileModule.service('profileService', ProfileService);
-// Components
+// attach Components
 profileModule.component('profileSettings', ProfileSettingsComponent);
 
 
